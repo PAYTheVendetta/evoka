@@ -17,7 +17,8 @@ body{
 
 }
 .conten_navegador .logo_nav{
-    /* border:2px  solid rgb(255, 0, 0); */
+    position: relative;
+    border:2px  solid rgb(255, 0, 0);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -35,19 +36,41 @@ body{
 }
 .navegador .option{
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 55px;
-    background: #fff;
+    width: 80px;
+    color: rgb(0, 0, 0);
+    background-image: 
+      radial-gradient(ellipse, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 70%),
+      url("imagenes/nave.jpeg");
+      background-size: cover;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+    mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
     padding: 0 16px;
     cursor: pointer;
 }
 .navegador .option:hover{
-    background: #f2f2f2;
+    background-image: 
+      radial-gradient(ellipse, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0) 70%),
+      url("imagenes/nave.jpeg");
+      background-size: cover;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%);
+    mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%);
+
 }
 .logo{
    width: 100%;
    /* border-radius: 50%; */
-   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
-   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+   mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 60%);
+   -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 60%);
+   mask-image: radial-gradient();
   
+}
+.text{
+    position: absolute;
+    top: 65px;
+    left: 55px;
 }
