@@ -17,7 +17,7 @@ body{
 
 }
 .conten_navegador .logo_nav{
-    border:2px  solid rgb(255, 0, 0);
+    /* border:2px  solid rgb(255, 0, 0); */
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -46,5 +46,8 @@ body{
 }
 .logo{
    width: 100%;
-   border-radius: 50%;
+   /* border-radius: 50%; */
+   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+  
 }
