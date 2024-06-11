@@ -10,6 +10,20 @@
     </style>
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+        <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+                <stop offset="20%" style="stop-color:rgba(255,255,255,0.5);stop-opacity:0.5" />
+                <stop offset="80%" style="stop-color:rgba(255,255,255,0.5);stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+            </linearGradient>
+          <filter id="filter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.03 0.95" numOctaves="1" result="warp" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+          </filter>
+        </defs>
+      </svg>
    <div class="conten_navegador">
     <div class="logo_nav">
         <img class="logo" src="imagenes/nave.jpeg">
@@ -28,10 +42,13 @@
         <li class="option" style="--i:4;">
             <span class="option-text">Contactos</span>
         </li>
-    </ul>
+    </ul>    
+   </div>
+   <div class="prue">
+    <label>text</label>
    </div>
     
 
-    <script src="scrypt.js"> cabeza();</script>
+    <script src="scrypt.js"></script>
 </body>
 </html>
